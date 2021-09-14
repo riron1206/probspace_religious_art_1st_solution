@@ -1,0 +1,26 @@
+T_max: 50
+batch_size: 16
+debug: false
+epochs: 50
+gradient_accumulation_steps: 1
+is_load_opt: true
+label_smoothing: 0.0
+load_model_path: none
+lr: 0.001
+max_grad_norm: 5
+min_lr: 1.0e-06
+mix_alpha: 1.0
+mix_decision_th: 0.5
+mixmethod: cutmix
+model_name: swin_base_patch4_window12_384_in22k
+n_classes: 13
+n_fold: 5
+name: ex11
+num_workers: 0
+optimizer: radam
+print_freq: 10000
+scheduler: CosineAnnealingLR
+seeds: [0, 1, 2]
+size: 384
+trn_fold: [0, 1, 2, 3, 4]
+weight_decay: 0

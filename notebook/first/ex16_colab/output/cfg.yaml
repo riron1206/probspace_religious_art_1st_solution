@@ -1,0 +1,26 @@
+T_max: 35
+batch_size: 8
+debug: false
+epochs: 35
+gradient_accumulation_steps: 2
+is_load_opt: true
+label_smoothing: 0.0
+load_model_path: none
+lr: 0.001
+max_grad_norm: 5
+min_lr: 1.0e-06
+mix_alpha: 1.0
+mix_decision_th: 0.5
+mixmethod: cutmix
+model_name: tf_efficientnetv2_l_in21ft1k
+n_classes: 13
+n_fold: 5
+name: ex16
+num_workers: 4
+optimizer: radam
+print_freq: 10000
+scheduler: CosineAnnealingLR
+seeds: [0, 1, 2]
+size: 480
+trn_fold: [0, 1, 2, 3, 4]
+weight_decay: 0
