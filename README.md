@@ -4,6 +4,8 @@ https://prob.space/competitions/religious_art
 
 
 
+## 解法の概要
+
 <img src="image/process.png" alt="process" style="zoom:100%;" />
 
 
