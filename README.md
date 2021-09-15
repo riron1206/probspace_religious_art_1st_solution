@@ -28,6 +28,7 @@ https://prob.space/competitions/religious_art
    |-ex16_test_influence-checkpoint.ipynb         # 提出ファイル作成
   |-make_pseudo_label
    |-ex11_ex16_big_logit_test-checkpoint.ipynb    # pseudo_label作成
+   |-ex11_ex16_big_logit_test_is06789_11.csv      # 作成したpseudo_label
    |-inf_cv                                       # ex11_colab, ex16_colabで作成したoofファイル
    |-inf_test                                     # ex11_colab, ex16_colabで作成した提出ファイル
  |-second      # 加重平均アンサンブル用フォルダ
@@ -55,9 +56,9 @@ https://prob.space/competitions/religious_art
 ## 実行手順
 
 1. notebook/eda/eda.ipynb を実行してnpzファイルをjpgファイルに変換
-2. notebook/first のex11_colab, ex16_colab のnotebookを実行
-3. 2の出力ファイルをnotebook/first/make_pseudo_label のinf_cv, inf_test にコピー
-4. notebook/first/make_pseudo_label のnotebookを実行
-5. notebook/second のex11_pseudo3_colab, ex15_pseudo3, ex16_pseudo3_colab のnotebookを実行
-6. 5の出力ファイルをnotebook/second/ensemble のinf_cv, inf_test にコピー
-7. notebook/second/ensemble のnotebookを実行して、ex11_ex15_ex16_pseudo3_votingclassifier-fit_v2_ens_weights_submission.csvを出力
+2. notebook/first のex11_colab, ex16_colab のnotebookを実行してモデル作成
+3. 2の出力ファイル（oofと提出ファイル）をnotebook/first/make_pseudo_label のinf_cv, inf_test にコピー
+4. notebook/first/make_pseudo_label のnotebookを実行して、pseudo_labelのcsvファイルであるex11_ex16_big_logit_test_is06789_11.csvを作成
+5. notebook/second のex11_pseudo3_colab, ex15_pseudo3, ex16_pseudo3_colab のnotebookを実行してモデル作成
+6. 5の出力ファイル（oofと提出ファイル）をnotebook/second/ensemble のinf_cv, inf_test にコピー
+7. notebook/second/ensemble のnotebookを実行して、最終提出ファイルであるex11_ex15_ex16_pseudo3_votingclassifier-fit_v2_ens_weights_submission.csvを作成
